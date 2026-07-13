@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrano's — Indian Street Food · Meaux</title>
+  <meta name="description" content="Obrano's, le fast-food indien halal de Meaux. Cheese naans au tandoor, poulet tikka, kebab, burgers & tacos. Ouvert 7j/7 de 11h30 à 1h. Livraison Uber Eats & Deliveroo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">O'brano<span>s</span></a>
+      <nav class="nav__links">
+        <a href="#carte">La carte</a>
+        <a href="#specialites">Spécialités</a>
+        <a href="#avis">Avis</a>
+        <a href="#livraison">Livraison</a>
+        <a href="#infos">Infos</a>
+      </nav>
+      <a href="tel:0175175519" class="btn btn--gold nav__cta">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        01 75 17 55 19
+      </a>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#carte">La carte</a>
+    <a href="#specialites">Spécialités</a>
+    <a href="#avis">Avis</a>
+    <a href="#livraison">Livraison</a>
+    <a href="#infos">Infos</a>
+    <a href="tel:0175175519" class="btn btn--gold">Commander · 01 75 17 55 19</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <svg class="hero__arch" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+        <path d="M300 40 C 300 40, 180 150, 180 300 L 180 560 M300 40 C 300 40, 420 150, 420 300 L 420 560 M120 560 L 480 560 M300 40 L 300 10 M285 25 A 15 15 0 0 1 315 25" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="300" cy="8" r="5" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+
+      <div class="hero__stack" aria-hidden="true">
+        <img src="img/menu/du-chef-burger.jpg" alt="">
+        <img src="img/menu/naan-kebab.jpg" alt="">
+        <img src="img/menu/wings-10.jpg" alt="">
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__badges reveal-load" style="--d:0">
+          <span class="chip chip--halal">حلال · Halal</span>
+          <span class="chip">★ 4,3 — 269 avis Google</span>
+          <span class="chip chip--open"><i></i>Ouvert 7j/7 · 11h30 → 1h00</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="reveal-load" style="--d:1">Street food</span>
+          <span class="reveal-load hero__title-accent" style="--d:2">indienne,</span>
+          <span class="reveal-load" style="--d:3">née au tandoor.</span>
+        </h1>
+
+        <p class="hero__sub reveal-load" style="--d:4">
+          Cheese naans cuits au four tandoor, poulet tikka, kebab, burgers &amp; tacos.
+          Le goût de l'Inde, l'esprit street food — à Meaux, place Jean Bureau.
+        </p>
+
+        <div class="hero__actions reveal-load" style="--d:5">
+          <a href="#carte" class="btn btn--gold btn--lg">Voir la carte</a>
+          <a href="tel:0175175519" class="btn btn--ghost btn--lg">Commander · 01 75 17 55 19</a>
+        </div>
+
+        <div class="hero__meta reveal-load" style="--d:6">
+          <div><strong>7j/7</strong><span>Livraison &amp; à emporter</span></div>
+          <div><strong>Tandoor</strong><span>Naans faits minute</span></div>
+          <div><strong>6,99€</strong><span>Menus à partir de</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ MARQUEE ══════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Cheese Naan ✦ Poulet Tikka ✦ Kebab ✦ King Khan Burger ✦ Tacos ✦ Wings ✦ Tenders ✦ Namasté Burger ✦ Kefta ✦&nbsp;</span>
+        <span>Cheese Naan ✦ Poulet Tikka ✦ Kebab ✦ King Khan Burger ✦ Tacos ✦ Wings ✦ Tenders ✦ Namasté Burger ✦ Kefta ✦&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ══════════ CARTE ══════════ -->
+    <section class="section section--carte" id="carte">
+      <div class="container">
+        <div class="section__head section__head--split reveal">
+          <div>
+            <p class="eyebrow">La carte</p>
+            <h2>Simple, généreuse, <em>maîtrisée</em></h2>
+          </div>
+          <p class="section__note">Tous les menus sont servis avec frites et boisson.<br>Tarifs livraison Uber Eats.</p>
+        </div>
+
+        <div class="tabs reveal" role="tablist">
+          <button class="tab is-active" data-tab="naans" role="tab">Menus naans</button>
+          <button class="tab" data-tab="burgers" role="tab">Burgers maison</button>
+          <button class="tab" data-tab="hamburgers" role="tab">Hamburgers</button>
+          <button class="tab" data-tab="texmex" role="tab">Tex-Mex &amp; Box</button>
+          <button class="tab" data-tab="tacos" role="tab">Tacos &amp; entrées</button>
+          <button class="tab" data-tab="assiettes" role="tab">Assiettes &amp; salades</button>
+          <button class="tab" data-tab="desserts" role="tab">Desserts &amp; boissons</button>
+        </div>
+
+        <div class="menu-panels reveal">
+
+          <div class="menu-panel is-active" id="panel-naans">
+            <ul class="menu-grid">
+              <li class="dish">
+                <h4 class="dish__name">Naan au kebab</h4>
+                <img class="dish__img" src="img/menu/naan-kebab.jpg" alt="Naan au kebab" loading="lazy">
+                <div class="dish__meta">
+                  <p>Émincé de kebab et crudités au choix</p>
+                  <span class="dish__price">11,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Naan au poulet tikka</h4>
+                <img class="dish__img" src="img/menu/naan-poulet-tikka.jpg" alt="Naan au poulet tikka" loading="lazy">
+                <div class="dish__meta">
+                  <p>Poulet tikka et crudités au choix</p>
+                  <span class="dish__price">11,49€</span>
+                </div>
+              </li>
+              <li class="dish dish--featured">
+                <h4 class="dish__name">Naan O'branos <em class="badge-star">Signature</em></h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>3 tenders, steak, Boursin et crudités au choix</p>
+                  <span class="dish__price">11,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Naan chicken tenders</h4>
+                <img class="dish__img" src="img/menu/naan-chicken-tenders.jpg" alt="Naan chicken tenders" loading="lazy">
+                <div class="dish__meta">
+                  <p>Chicken tenders, fromage de chèvre, crudités</p>
+                  <span class="dish__price">11,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Naan au poulet curry</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Poulet curry et crudités au choix</p>
+                  <span class="dish__price">11,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Naan aux falafels</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Boulettes de pois chiches et crudités au choix</p>
+                  <span class="dish__price">11,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Naan kefta</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>2 keftas maison, cheddar et crudités au choix</p>
+                  <span class="dish__price">11,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Naan paysano</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>3 steaks, bacon, cheddar et crudités au choix</p>
+                  <span class="dish__price">11,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Naan grill</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Escalope grillée, lardons, emmental, crudités</p>
+                  <span class="dish__price">11,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Naan bleu</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Escalope grillée, fromage bleu et crudités</p>
+                  <span class="dish__price">11,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Naan patate</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>2 steaks, pommes de terre, lardons, crème fraîche</p>
+                  <span class="dish__price">11,49€</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-burgers">
+            <ul class="menu-grid">
+              <li class="dish dish--featured">
+                <h4 class="dish__name">Du Chef <em class="badge-star">Signature</em></h4>
+                <img class="dish__img" src="img/menu/du-chef-burger.jpg" alt="Du Chef Burger Maison" loading="lazy">
+                <div class="dish__meta">
+                  <p>Bœuf 130 g, raclette, bacon, oignons confits, sauce O'branos</p>
+                  <span class="dish__price">11,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Classique <em class="badge-top">Populaire</em></h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Bœuf 130 g, cheddar, oignons confits, salade, sauce cocktail</p>
+                  <span class="dish__price">11,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Blue Burger</h4>
+                <img class="dish__img" src="img/menu/blue-burger.jpg" alt="Blue Burger Maison" loading="lazy">
+                <div class="dish__meta">
+                  <p>Bœuf 130 g, fourme d'Ambert, aubergines, coriandre</p>
+                  <span class="dish__price">11,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Savoie Burger</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Bœuf 130 g, tomme de Savoie, tomates séchées, persil</p>
+                  <span class="dish__price">11,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Chèvre Burger</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Bœuf 130 g, chèvre, champignons de Paris, ciboulette</p>
+                  <span class="dish__price">11,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Morbier Burger</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Bœuf 130 g, morbier, poivrons grillés, oignons frits</p>
+                  <span class="dish__price">11,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Brie Burger</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Bœuf 130 g, brie, bacon, oignons confits, ciboulette</p>
+                  <span class="dish__price">11,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Fermier Burger</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Escalope de poulet, tomme de Savoie, poivrons grillés</p>
+                  <span class="dish__price">11,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Meldois</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Bœuf 130 g, galette de pommes de terre, brie de Meaux</p>
+                  <span class="dish__price">11,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Végétarien</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Champignons, aubergines, tomates séchées, tomme de Savoie</p>
+                  <span class="dish__price">11,99€</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-hamburgers">
+            <ul class="menu-grid">
+              <li class="dish dish--featured">
+                <h4 class="dish__name">Triple cheeseburger <em class="badge-top">N°3 des ventes</em></h4>
+                <img class="dish__img" src="img/menu/triple-cheeseburger.jpg" alt="Menu triple cheeseburger" loading="lazy">
+                <div class="dish__meta">
+                  <p>3 steaks, cheddar et crudités au choix</p>
+                  <span class="dish__price">8,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">King Khan burger</h4>
+                <img class="dish__img" src="img/menu/king-khan-burger.jpg" alt="Menu king khan burger" loading="lazy">
+                <div class="dish__meta">
+                  <p>Steak, 3 tenders, galette de pommes de terre, cheddar</p>
+                  <span class="dish__price">10,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Double cheeseburger</h4>
+                <img class="dish__img" src="img/menu/double-cheeseburger.jpg" alt="Menu double cheeseburger" loading="lazy">
+                <div class="dish__meta">
+                  <p>2 steaks, cheddar et crudités au choix</p>
+                  <span class="dish__price">7,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Cheeseburger</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>1 steak, cheddar et crudités au choix</p>
+                  <span class="dish__price">6,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Namasté burger</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>3 tenders, galette de pommes de terre, brie de Meaux</p>
+                  <span class="dish__price">10,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Fou burger</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>4 tenders, galette de pommes de terre, bacon, cheddar</p>
+                  <span class="dish__price">10,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Bombay burger</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Escalope grillée, kefta, cheddar et crudités au choix</p>
+                  <span class="dish__price">10,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Bollywood</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Escalope grillée, galette de pommes de terre, cheddar</p>
+                  <span class="dish__price">10,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Brazer burger</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Escalope grillée, emmental et crudités au choix</p>
+                  <span class="dish__price">9,49€</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-texmex">
+            <ul class="menu-grid">
+              <li class="dish dish--featured">
+                <h4 class="dish__name">Wings 10 pièces <em class="badge-top">N°2 des ventes</em></h4>
+                <img class="dish__img" src="img/menu/wings-10.jpg" alt="Menu wings 10 pièces" loading="lazy">
+                <div class="dish__meta">
+                  <p>Servi avec frites et boisson au choix</p>
+                  <span class="dish__price">9,39€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Mix wings &amp; tenders 10 pièces</h4>
+                <img class="dish__img" src="img/menu/mix-wings-tenders.jpg" alt="Menu mix wings et tenders" loading="lazy">
+                <div class="dish__meta">
+                  <p>Nombre de pièces au choix, frites et boisson</p>
+                  <span class="dish__price">10,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Tenders 10 pièces</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Servi avec frites et boisson au choix</p>
+                  <span class="dish__price">11,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Mix wings &amp; tenders 18 pièces</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Servi avec 2 frites et 2 boissons au choix</p>
+                  <span class="dish__price">19,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Wings 18 pièces</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Servi avec 2 frites et 2 boissons au choix</p>
+                  <span class="dish__price">20,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Tenders 18 pièces</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Servi avec 2 frites et 2 boissons au choix</p>
+                  <span class="dish__price">22,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Box 2 — 30 wings</h4>
+                <img class="dish__img" src="img/menu/box-2.jpg" alt="Menu box" loading="lazy">
+                <div class="dish__meta">
+                  <p>Servi avec 4 frites et boisson 1,5 L au choix</p>
+                  <span class="dish__price">28,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Box 1 — 28 tenders</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Servi avec 4 frites et boisson 1,5 L au choix</p>
+                  <span class="dish__price">28,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Box 3 — 15 wings + 15 tenders</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Servi avec 4 frites et boisson 1,5 L au choix</p>
+                  <span class="dish__price">31,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Box 4 — 20 wings + 20 tenders</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Servi avec 4 frites et boisson 1,5 L au choix</p>
+                  <span class="dish__price">41,99€</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-tacos">
+            <ul class="menu-grid">
+              <li class="dish dish--featured">
+                <h4 class="dish__name">Tacos 2 viandes <em class="badge-top">N°1 des ventes</em></h4>
+                <img class="dish__img" src="img/menu/tacos-2-viandes.jpg" alt="Menu tacos 2 viandes" loading="lazy">
+                <div class="dish__meta">
+                  <p>2 viandes au choix, sauce fromagère, frites, crudités</p>
+                  <span class="dish__price">11,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Tacos 1 viande</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>1 viande au choix, sauce fromagère, frites, crudités</p>
+                  <span class="dish__price">10,49€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Mozzasticks 6 pièces</h4>
+                <img class="dish__img" src="img/menu/mozzastick.jpg" alt="Mozzasticks" loading="lazy">
+                <div class="dish__meta">
+                  <p>Bâtonnets de mozzarella panés</p>
+                  <span class="dish__price">5,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Chilli Cheese 4 pièces</h4>
+                <img class="dish__img" src="img/menu/chilli-cheese.jpg" alt="Chilli cheese" loading="lazy">
+                <div class="dish__meta">
+                  <p>Bouchées fourrées au fromage et piment vert</p>
+                  <span class="dish__price">3,69€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Chilli Cheese 8 pièces</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Bouchées fourrées au fromage et piment vert</p>
+                  <span class="dish__price">6,89€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Cheeseburger seul</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Steak de bœuf, cheddar, cornichons, ketchup, moutarde</p>
+                  <span class="dish__price">4,99€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Riz basmati</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Spécialité indienne — riz blanc frais</p>
+                  <span class="dish__price">6,99€</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-assiettes">
+            <ul class="menu-grid">
+              <li class="dish">
+                <h4 class="dish__name">Assiette de poulet tikka</h4>
+                <img class="dish__img" src="img/menu/assiette-poulet-tikka.jpg" alt="Assiette de poulet tikka" loading="lazy">
+                <div class="dish__meta">
+                  <p>Servie avec 1 naan</p>
+                  <span class="dish__price">14,50€</span>
+                </div>
+              </li>
+              <li class="dish dish--featured">
+                <h4 class="dish__name">Assiette mixte <em class="badge-star">Généreuse</em></h4>
+                <img class="dish__img" src="img/menu/assiette-mixte.jpg" alt="Assiette mixte" loading="lazy">
+                <div class="dish__meta">
+                  <p>3 viandes au choix, servie avec 1 naan</p>
+                  <span class="dish__price">17,00€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Assiette de kebab</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Servie avec 1 naan</p>
+                  <span class="dish__price">14,50€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Assiette de tenders</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Servie avec 1 naan</p>
+                  <span class="dish__price">14,50€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Assiette de kefta</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Servie avec 1 naan</p>
+                  <span class="dish__price">14,50€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Assiette d'escalope grillée</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Servie avec 1 naan</p>
+                  <span class="dish__price">14,50€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Assiette d'escalope à la crème fraîche</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Servie avec 1 naan</p>
+                  <span class="dish__price">14,50€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Salade César</h4>
+                <img class="dish__img" src="img/menu/salade-cesar.jpg" alt="Salade César" loading="lazy">
+                <div class="dish__meta">
+                  <p>Laitue, poulet, olives vertes, sauce César</p>
+                  <span class="dish__price">8,50€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Salades tikka, curry, tenders ou wings</h4>
+                <span class="dish__ph">✦</span>
+                <div class="dish__meta">
+                  <p>Salade garnie au choix</p>
+                  <span class="dish__price">8,50€</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="panel-desserts">
+            <ul class="menu-grid">
+              <li class="dish">
+                <h4 class="dish__name">Tiramisu Oreo</h4>
+                <img class="dish__img" src="img/menu/tiramisu-oreo.jpg" alt="Tiramisu Oreo" loading="lazy">
+                <div class="dish__meta">
+                  <p>Biscuits Oreo et crème mascarpone</p>
+                  <span class="dish__price">4,00€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Tiramisu caramel &amp; spéculoos</h4>
+                <img class="dish__img" src="img/menu/tiramisu-speculoos.jpg" alt="Tiramisu caramel spéculoos" loading="lazy">
+                <div class="dish__meta">
+                  <p>Crème mascarpone, biscuits spéculoos, caramel</p>
+                  <span class="dish__price">4,00€</span>
+                </div>
+              </li>
+              <li class="dish">
+                <h4 class="dish__name">Boissons fraîches</h4>
+                <img class="dish__img" src="img/menu/boissons.jpg" alt="Boissons fraîches" loading="lazy">
+                <div class="dish__meta">
+                  <p>Coca-Cola, zéro, cherry, Fanta, Sprite, 7Up Mojito, Oasis, Ice Tea…</p>
+                  <span class="dish__price">2,00€</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="carte-disclaimer reveal">Tarifs livraison Uber Eats — les prix peuvent différer sur place ou sur Deliveroo. La direction se réserve le droit de modifier ces offres sans préavis.</p>
+      </div>
+    </section>
+
+    <!-- ══════════ SPÉCIALITÉS ══════════ -->
+    <section class="section" id="specialites">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Nos signatures</p>
+          <h2>Ce qui fait notre <em>réputation</em></h2>
+        </div>
+
+        <div class="spec-grid">
+          <article class="spec-card spec-card--wide reveal" style="--d:0">
+            <img class="spec-card__img" src="img/menu/naan-chicken-tenders.jpg" alt="Naan garni cuit au tandoor" loading="lazy">
+            <div class="spec-card__body">
+              <span class="spec-card__num">01 — La spécialité maison</span>
+              <h3>Cheese Naan au tandoor</h3>
+              <p>Pétri, garni et cuit à la commande dans notre four tandoor traditionnel. Le naan qui a fait notre nom — moelleux, fondant, authentique.</p>
+            </div>
+          </article>
+          <article class="spec-card reveal" style="--d:1">
+            <img class="spec-card__img" src="img/menu/assiette-poulet-tikka.jpg" alt="Assiette de poulet tikka" loading="lazy">
+            <div class="spec-card__body">
+              <span class="spec-card__num">02</span>
+              <h3>Poulet Tikka</h3>
+              <p>Mariné aux épices indiennes, grillé, servi en naan, assiette ou salade.</p>
+            </div>
+          </article>
+          <article class="spec-card reveal" style="--d:2">
+            <img class="spec-card__img" src="img/menu/king-khan-burger.jpg" alt="King Khan Burger" loading="lazy">
+            <div class="spec-card__body">
+              <span class="spec-card__num">03</span>
+              <h3>King Khan Burger</h3>
+              <p>Généreux, bien garni, inoubliable. Le burger qui fait parler de lui dans les avis.</p>
+            </div>
+          </article>
+          <article class="spec-card reveal" style="--d:3">
+            <img class="spec-card__img" src="img/menu/mix-wings-tenders.jpg" alt="Wings et tenders" loading="lazy">
+            <div class="spec-card__body">
+              <span class="spec-card__num">04</span>
+              <h3>Wings &amp; Tenders</h3>
+              <p>Croustillants dehors, tendres dedans, parfaitement assaisonnés.</p>
+            </div>
+          </article>
+          <article class="spec-card reveal" style="--d:4">
+            <img class="spec-card__img" src="img/menu/tacos-2-viandes.jpg" alt="Tacos 2 viandes" loading="lazy">
+            <div class="spec-card__body">
+              <span class="spec-card__num">05</span>
+              <h3>Tacos, Kebab &amp; Assiettes</h3>
+              <p>Des portions généreuses, un rapport qualité-prix imbattable, halal et fait avec soin.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ AVIS ══════════ -->
+    <section class="section" id="avis">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Ils en parlent mieux que nous</p>
+          <h2>4,3 <span class="stars">★★★★<span class="star-dim">★</span></span> <em>sur 269 avis Google</em></h2>
+        </div>
+
+        <div class="reviews">
+          <figure class="review reveal" style="--d:0">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>« Pas déçu une seule fois, prix très attractif pour une qualité au rendez-vous. Que ce soit les burgers ou les pizzas, je me régale. Je vous le conseille vivement. »</blockquote>
+            <figcaption>Youri O. <span>· Avis Google</span></figcaption>
+          </figure>
+          <figure class="review reveal" style="--d:1">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>« La nourriture était super bonne, 10/10. Le burger MAK KHAN était vraiment très gros et bien garni. Le tacos, incroyable. Merci pour cette excellente expérience. »</blockquote>
+            <figcaption>Ibrahim N. <span>· Avis Google</span></figcaption>
+          </figure>
+          <figure class="review reveal" style="--d:2">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>« Naans authentiques au tandoor, portions très généreuses, accueil chaleureux et professionnel. Un rapport qualité-prix exceptionnel. »</blockquote>
+            <figcaption>Résumé des avis <span>· Google Maps</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ LIVRAISON ══════════ -->
+    <section class="section section--delivery" id="livraison">
+      <div class="container">
+        <div class="delivery reveal">
+          <div class="delivery__text">
+            <p class="eyebrow">Livraison 7j/7</p>
+            <h2>Chez vous, <em>en quelques minutes</em></h2>
+            <p class="delivery__sub">Retrouvez Obrano's sur Uber Eats et Deliveroo, ou appelez-nous directement. Livraison tous les jours — de 11h30 à 15h et de 18h à 23h30.</p>
+            <ul class="delivery__facts">
+              <li><strong>17€</strong> minimum sur Meaux</li>
+              <li><strong>20€</strong> minimum villes voisines</li>
+              <li><strong>Titres-resto acceptés</strong> Ticket Restaurant®, Swile, Pluxee, Bimpli, UpDéjeuner</li>
+              <li><strong>Sur place</strong> &amp; à emporter</li>
+            </ul>
+          </div>
+          <div class="delivery__platforms">
+            <a class="platform" href="https://www.ubereats.com/fr" target="_blank" rel="noopener">
+              <span class="platform__name platform__name--uber">Uber <b>Eats</b></span>
+              <span class="platform__cta">Commander →</span>
+            </a>
+            <a class="platform" href="https://deliveroo.fr" target="_blank" rel="noopener">
+              <span class="platform__name platform__name--deliveroo">deliveroo</span>
+              <span class="platform__cta">Commander →</span>
+            </a>
+            <a class="platform platform--phone" href="tel:0175175519">
+              <span class="platform__name">01 75 17 55 19</span>
+              <span class="platform__cta">Appeler →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ INFOS ══════════ -->
+    <section class="section" id="infos">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Infos pratiques</p>
+          <h2>Venez comme vous êtes, <em>on s'occupe du reste</em></h2>
+        </div>
+
+        <div class="infos-grid">
+          <div class="info-card reveal" style="--d:0">
+            <h3>Adresse</h3>
+            <p>1-3 place Jean Bureau<br>77100 Meaux<br><small>Quartier du marché du samedi</small></p>
+            <a href="https://maps.google.com/?q=Obrano's+1-3+Place+Jean+Bureau+77100+Meaux" target="_blank" rel="noopener" class="info-card__link">Itinéraire →</a>
+          </div>
+          <div class="info-card reveal" style="--d:1">
+            <h3>Horaires</h3>
+            <p><strong>7j/7 — 11h30 à 1h00</strong><br>Vendredi : dès 18h00<br><small>Livraison : 11h30–15h &amp; 18h–23h30</small></p>
+          </div>
+          <div class="info-card reveal" style="--d:2">
+            <h3>Contact</h3>
+            <p><a href="tel:0175175519" class="info-card__phone">01 75 17 55 19</a></p>
+            <div class="info-card__socials">
+              <a href="https://www.instagram.com/obranos_meaux/" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor" stroke="none"/></svg>
+                @obranos_meaux
+              </a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7h2.5l.5-3h-3V9.1c0-.9.3-1.6 1.7-1.6H16.6V4.8c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4V11H7.5v3h2.7v7h3.3z"/></svg>
+                O'branos
+              </a>
+            </div>
+          </div>
+          <div class="info-card info-card--halal reveal" style="--d:3">
+            <h3>حلال</h3>
+            <p><strong>100% Halal</strong><br>Toutes nos viandes sont halal.<br><small>Sans alcool.</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CTA FINAL ══════════ -->
+    <section class="final-cta">
+      <div class="container reveal">
+        <h2>Une petite faim,<br><em>une grande envie&nbsp;?</em></h2>
+        <div class="hero__actions">
+          <a href="tel:0175175519" class="btn btn--gold btn--lg">Commander maintenant</a>
+          <a href="https://maps.google.com/?q=Obrano's+1-3+Place+Jean+Bureau+77100+Meaux" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">Nous trouver</a>
+        </div>
+        <p class="final-cta__hours">Ouvert 7j/7 · 11h30 → 1h00 · Place Jean Bureau, Meaux</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="nav__logo">O'brano<span>s</span></a>
+      <p>Indian street food · Halal · Meaux</p>
+      <div class="footer__links">
+        <a href="https://www.instagram.com/obranos_meaux/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.ubereats.com/fr" target="_blank" rel="noopener">Uber Eats</a>
+        <a href="https://deliveroo.fr" target="_blank" rel="noopener">Deliveroo</a>
+        <a href="tel:0175175519">01 75 17 55 19</a>
+      </div>
+      <p class="footer__legal">© 2026 Obrano's — 1-3 place Jean Bureau, 77100 Meaux</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
