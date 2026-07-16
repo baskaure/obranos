@@ -40,6 +40,17 @@ tabs.forEach(tab => {
   });
 });
 
+// ═══ Spotlight : halo doré sous le curseur (desktop) ═══
+if (window.matchMedia('(hover: hover)').matches) {
+  document.querySelectorAll('.dish, .spec-card, .review, .info-card, .platform').forEach(card => {
+    card.addEventListener('pointermove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    }, { passive: true });
+  });
+}
+
 // ═══ Reveal au scroll ═══
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
