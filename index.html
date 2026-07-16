@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Obrano's — Indian Street Food · Meaux</title>
   <meta name="description" content="Obrano's, le fast-food indien halal de Meaux. Cheese naans au tandoor, poulet tikka, kebab, burgers & tacos. Ouvert 7j/7 de 11h30 à 1h. Livraison Uber Eats & Deliveroo.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
 
   <!-- ══════════ NAV ══════════ -->
   <header class="nav" id="nav">
-    <div class="nav__inner">
+    <div class="nav__island">
       <a href="#top" class="nav__logo">O'brano<span>s</span></a>
       <nav class="nav__links">
         <a href="#carte">La carte</a>
@@ -24,10 +24,7 @@
         <a href="#livraison">Livraison</a>
         <a href="#infos">Infos</a>
       </nav>
-      <a href="tel:0175175519" class="btn btn--gold nav__cta">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        01 75 17 55 19
-      </a>
+      <a href="tel:0175175519" class="btn btn--gold btn--sm nav__cta">Commander</a>
       <button class="nav__burger" id="burger" aria-label="Menu">
         <span></span><span></span>
       </button>
@@ -53,12 +50,6 @@
         <circle cx="300" cy="8" r="5" stroke="currentColor" stroke-width="1.5"/>
       </svg>
 
-      <div class="hero__stack" aria-hidden="true">
-        <img src="img/menu/du-chef-burger.jpg" alt="">
-        <img src="img/menu/naan-kebab.jpg" alt="">
-        <img src="img/menu/wings-10.jpg" alt="">
-      </div>
-
       <div class="container hero__content">
         <div class="hero__badges reveal-load" style="--d:0">
           <span class="chip chip--halal">حلال · Halal</span>
@@ -67,21 +58,28 @@
         </div>
 
         <h1 class="hero__title">
-          <span class="reveal-load" style="--d:1">Street food</span>
-          <span class="reveal-load hero__title-accent" style="--d:2">indienne,</span>
-          <span class="reveal-load" style="--d:3">née au tandoor.</span>
+          <span class="reveal-load" style="--d:1">Street food <em class="hero__title-accent">indienne</em>,</span>
+          <span class="reveal-load" style="--d:2">née au tandoor.</span>
         </h1>
 
-        <p class="hero__sub reveal-load" style="--d:4">
+        <p class="hero__sub reveal-load" style="--d:3">
           Cheese naans cuits au four tandoor, poulet tikka, kebab, burgers &amp; tacos.
           Le goût de l'Inde, l'esprit street food — à Meaux, place Jean Bureau.
         </p>
 
-        <div class="hero__actions reveal-load" style="--d:5">
+        <div class="hero__actions reveal-load" style="--d:4">
           <a href="#carte" class="btn btn--gold btn--lg">Voir la carte</a>
           <a href="tel:0175175519" class="btn btn--ghost btn--lg">Commander · 01 75 17 55 19</a>
         </div>
+      </div>
 
+      <div class="hero__showcase reveal-load" style="--d:5" aria-hidden="true">
+        <img src="img/menu/du-chef-burger.jpg" alt="">
+        <img src="img/menu/naan-kebab.jpg" alt="">
+        <img src="img/menu/wings-10.jpg" alt="">
+      </div>
+
+      <div class="container">
         <div class="hero__meta reveal-load" style="--d:6">
           <div><strong>7j/7</strong><span>Livraison &amp; à emporter</span></div>
           <div><strong>Tandoor</strong><span>Naans faits minute</span></div>
